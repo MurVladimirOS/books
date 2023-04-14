@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Django</title>
+</head>
+<body>
+    <h2>Count all books: {{ count_books }}</h2>
+    <h2>Name, Descriptions, Author, Date changing, Count page, Date manual:</h2>
+    {% for book in books %}
+    <h2>{{ book.name}}, {{book.descriptions}}, {{book.author}}, {{book.date}},
+        {{book.count_page}}, {{book.date_manual}}</h2>
+    {% endfor %}
+</body>
+</html>
